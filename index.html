@@ -10,54 +10,33 @@
 
 <body>
 
+
     <header class="main-header">
+
 
         <!-- Logo -->
         <div class="logo-icon"></div>
 
-        
+
         <!-- Navigation -->
         <nav>
+            <a href="#section-Home"style=
+            "padding: 5px ;
+            border-style: 10px;">Home</a>
 
-            
-            <a href="#section-Home" 
-            
-            style=
-            "padding: 10px ;
-            border-style: 10px;">
-            
-           
-            Home</a>
+            <a href="#section-Our-Profile"style=
+            "padding: 5px;
+            border-style: 10px;">Our Profile</a>
 
-            <a href="#section-Our-Profile" 
-            
-            style=
-            "padding: 10px;
-            border-style: 10px;">
-            
-            
-            Our Profile</a>
-
-            <a href="#section-Portfolio" 
-
-            style=
-            "padding: 10px;
-             border-style: 10px;">
-                
-                 
-            Portfolio</a>
+            <a href="#section-Portfolio" style=
+            "padding: 5px;
+             border-style: 10px;">Portfolio</a>
              
             <a href="#section-Message-Us"
              style=
-             "padding: 10px;
-              border-style : 10px; ">
-             
-             
-             Message Us</a>
-     
-
-
-        </nav>
+             "padding: 5px;
+              border-style : 10px; "> Message Us</a>
+         </nav>
 
 
     </header>
@@ -75,18 +54,15 @@
 
             <article>
                 <p>
-                    <h3> Website for studying more about true Islam is and according to the understanding of The Prophet Muhammad 
-                        <i> Shallallahu 'Alaihi Wasallam</i> and his companions <i> Radhiyallahu 'Anhum.</i> 
-                        While studying you will accompanied by our competent teachers.
-                        <bold> So, what are you waiting for, lets join ou free class!!</bold>
+                    <h3><bold> Lorem ipsum dolor, sit amet consectetur adipisicing elit.</bold>
                     </h3>
 
                 <div class="photo-banner"
-                    style="border: 1px solid;
-                    background-image: none;
-                    background-position: 0%;
+                    style="
+                    background-image:url(https://images.unsplash.com/photo-1553755088-ef1973c7b4a1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+                    background-position: center;
                     background-size: auto;
-                    height: 480px;">
+                    height: 600px;">
                     
                 
                 </div>
@@ -105,27 +81,46 @@
 
            <div class="profile-icon-container">
 
-            <div>
+            
+             <div>
+
+             <a href="section-ustadz-fulan-1"
+              class="profile-icon">
+             </a>
                 <div class="profile-icon"></div>
                 <h4> Ustadz Fulan 1</h4>
-            </div>
 
-            <div>
-                <div class="profile-icon"></div>
-                <h4> Ustadz Fulan 2</h4>
-            </div>
+             </div>
 
-            <div>
-                <div class="profile-icon"></div>
-                <h4> Ustadz Fulan 3</h4>
-            </div>
+             
 
-            <div>
-                <div class="profile-icon"></div>
-                <h4> Ustadz Fulan 4</h4>
-            </div>
+             <div>
 
-           </div>
+                <a href="section-ustadz-fulan-2"></a>
+                   <div class="profile-icon"></div>
+                   <h4> Ustadz Fulan 2</h4>
+   
+             </div>
+
+             
+
+             <div>
+
+                <a href="section-ustadz-fulan-3"></a>
+                   <div class="profile-icon"></div>
+                   <h4> Ustadz Fulan 3</h4>
+   
+             </div>
+
+
+             <div>
+
+                <a href="section-ustadz-fulan-3"></a>
+                   <div class="profile-icon"></div>
+                   <h4> Ustadz Fulan 3</h4>
+   
+             </div>
+
         </section>
 
         <hr>
@@ -135,6 +130,39 @@
             <header>
                 <h1> Portfolio </h1>
             </header>
+
+            <section id="section-ustadz-fulan-1">
+
+                <header>
+                    <h1> Ustadz Fulan 1</h1>
+                </header>
+
+            </section>
+
+            <section id="section-ustadz-fulan-2">
+                
+                <header>
+                    <h1> Ustadz Fulan 2</h1>
+                </header>
+
+            </section>
+
+            <section id="section-ustadz-fulan-3">
+                
+                <header>
+                    <h1> Ustadz Fulan 3</h1>
+                </header>
+
+            </section>
+
+            <section id="section-ustadz-fulan-4">
+                
+                <header>
+                    <h1> Ustadz Fulan 4</h1>
+                </header>
+
+            </section>
+
         </section>
 
         <hr>
@@ -142,26 +170,48 @@
         <!-- Message Us -->
         <section id="section-Message-Us">
             <header>
-                <h1> Message Us </h1>
+
             </header>
 
             <section>
                 <!-- Form -->
-                <form></form>
+                <form>
+                    <label for="name"> Nama : </label>
+                    <input type="text" id="name" name="name" required> <br><br>
 
+                    <label for="gender">Jenis Kelamin :</label>
+                    <select id="gender" name="gender" required>
+                        <option value="" disabled selected>Pilih</option>
+                        <option value="" laki-laki> Laki-laki</option>
+                        <option value="" perempuan> Perempuan</option>
+                    </select><br><br>
+
+                    <label for="Message">Pesan</label>
+                    <textarea id="Message" name="Message" required></textarea><br><br>
+
+                    <Button type="submit"> Submit </Button>
+           
+                </form>
                 <!-- Result Form -->
-                <div></div>
+                <div id="Result" class="hidden">
+                    <h3>Hasil Form</h3>
+                    <p><strong>Nama</strong><span id="resultName"></span></p>
+                    <p><strong>Jenis Kelamin</strong><span id="resultGender"></span></p>
+                    <p><strong>Pesan</strong><span id="resultMessage"></span></p>
+                </div >
+
             </section>
+            <script src="script.js"></script>
         </section>
         
 
 
-    </main>
+    </main> 
 
-    <footer>
+    <footer> 
 
-    Made by iqbarhidayat1
-
+    <h6>Made by iqbarhidayat1 </h6>
+ 
     </footer>
 
 
